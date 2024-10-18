@@ -2,7 +2,9 @@ import java.util.ArrayList; // arraylist required for unbounded lists
 import java.util.Scanner;
 
 public class commUnityPrep {
-    public static void main(String [] args){
+    // use method to build new table of user resources multiple times 
+    // will be used to update database of resources
+    public void pullUserResources() {
         // initialize new Scanner
         Scanner input = new Scanner(System.in);
 
@@ -83,6 +85,10 @@ public class commUnityPrep {
 
         // call on method from Inventor Builder class to print user's resources in a chart
         build1.displayUserItems();
+    }
+    
+    public static void main(String [] args){
+        pullUserResources();
     }
 }
 
