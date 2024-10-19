@@ -50,8 +50,7 @@ document.getElementById('get-location').addEventListener('click', () => {
 
                 // Store coordinates in the database
                 set(userRef, {
-                    latitude: latitude,
-                    longitude: longitude,
+                    coordinates: coordinates
                 })
                 .then(() => {
                     console.log("User data saved successfully.");
