@@ -28,7 +28,7 @@ document.getElementById('get-location').addEventListener('click', () => {
                 document.getElementById('location').innerHTML = 
                     `Latitude: ${latitude}, Longitude: ${longitude}`;
 
-                const dbRef = ref(database, 'community-prep-1024-default-rtdb/data/~2F');
+                const dbRef = ref(database, 'https://community-prep-1024-default-rtdb.firebaseio.com/');
                 const data = coordinates;
                 set(dbRef, data)
                 
