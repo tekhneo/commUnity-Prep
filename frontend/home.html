@@ -12,7 +12,7 @@
     <div class="wrapper">
         <h1>CommUNITY Prep</h1>
       <h2>Welcome</h2>
-      
+
 <div class="location-wrapper">
       <h3>User Location</h3>
     <button id="get-location">Get Location</button>
@@ -27,10 +27,6 @@
       <button id="add-resource">Add a Resource</button>
       <button id="view-resources">View My Resources</button>
       </div>
-
-<!-- CODE TO GET LOCATION -->
-<script>
-</script>
 
 
 <!-- STYLES FOR THE HOME PAGE -->
@@ -58,9 +54,26 @@
             display: flex; 
             justify-content: space-between; 
             align-items: center;
-            padding: auto .5rem;
             box-sizing: content-box;
+            align-items: stretch;
         }
+    /* Mobile Responsiveness */
+        @media(max-width: 900px){
+  .wrapper{
+    width: min(400px, 90%);
+    height: 400px;
+    justify-content: space-evenly;
+    }
+  div.btns button {
+    font-size: 16px;
+    padding: auto 0.25rem;
+    }
+    div.btns {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    }
+}
 
         .wrapper{
             display: flex;
@@ -68,5 +81,6 @@
 
         }
       </style>
+    </div>
   </body>
 </html>
