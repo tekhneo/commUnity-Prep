@@ -27,19 +27,6 @@ document.getElementById('get-location').addEventListener('click', () => {
 
                 document.getElementById('location').innerHTML = 
                     `Latitude: ${latitude}, Longitude: ${longitude}`;
-
-                //const dbRef = ref(database, 'https://community-prep-1024-default-rtdb.firebaseio.com/');
-                //const data = coordinates;
-                //set(dbRef, data)
-
-                const database = firebase.database();
-                const userRef = database.ref('users/' + userId); // Create a reference to the user's data
-                const userData = {
-                    latitude: ${latitude},
-                    longitude: ${longitude}               
-                };
-
-userRef.set(userData); // Send the data to the database
                 
             },
             (error) => {
@@ -63,3 +50,16 @@ userRef.set(userData); // Send the data to the database
         document.getElementById('location').innerHTML = "Geolocation is not supported by this browser.";
     }
 });
+
+const dbRef = ref(database, 'https://community-prep-1024-default-rtdb.firebaseio.com/');
+const data = coordinates;
+set(dbRef, data)
+
+const database = firebase.database();
+const userRef = database.ref('users/' + userId); // Create a reference to the user's data
+const userData = {
+        latitude: ${latitude},
+        longitude: ${longitude}               
+        };
+
+userRef.set(userData); // Send the data to the database
