@@ -4,16 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CommUnity Prep</title>
+    <!-- HOME PAGE -->
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="register.js" defer></script>
+    <script type="module" src="location.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <h1>CommUNITY Prep</h1>
-      <h2>Welcome Home</h2>
+      <h2>Welcome</h2>
       
+<div class="location-wrapper">
+      <h3>User Location</h3>
+    <button id="get-location">Get Location</button>
+    <div id="location">The location will go here.</div>
+</div>
+
+
+
+      
+      <div class="btns">
       <button type="button" id="community">View Community Resources</button>
       <button id="add-resource">Add a Resource</button>
       <button id="view-resources">View My Resources</button>
+      </div>
+
+<!-- CODE TO GET LOCATION -->
+<script>
+</script>
+
+
+<!-- STYLES FOR THE HOME PAGE -->
+      <style>
+        .location-wrapper *{
+            margin-top: .9rem;
+        }
+
+        button{
+            flex: 1;
+            margin: .2rem;
+            font-size: 0.8rem;
+            padding: 15px 1rem;
+            background-color: var(--accent-color);
+            color: var(--base-color);
+            font: inherit;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 150ms ease;
+            border-radius: 12px;
+        }
+
+        div.btns {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            padding: auto .5rem;
+            box-sizing: content-box;
+        }
+
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+
+        }
+      </style>
   </body>
 </html>

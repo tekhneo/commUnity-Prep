@@ -2,9 +2,6 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
   import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 
-// Your web app's Firebase configuration
-
-
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
@@ -56,7 +53,7 @@ submit.addEventListener("click", function (event) {
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert(errorMessage)
+    alert("***WRONG user/password***\n" + errorMessage)
   });
     
 })

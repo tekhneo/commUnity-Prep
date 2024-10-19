@@ -21,12 +21,13 @@ body{
   background-image: linear-gradient(to bottom left, red ,orange ,yellow 30%,green 55%,blue 65%,indigo,violet 95%); 
   background-size: cover;
   background-position: right;
-  overflow: hidden;
+  background-attachment: fixed;
 }
+
 .wrapper{
   box-sizing: border-box;
   background-color: var(--base-color);
-  height: 90vh;
+  min-height: 90vh;
   width: max(50%, 600px);
   margin: 5vh auto 5vh auto;
   padding: 10px;
@@ -112,10 +113,10 @@ form button{
   cursor: pointer;
   transition: 150ms ease;
 }
-form button:hover{
+button:hover{
   background-color: var(--text-color);
 }
-form button:focus{
+button:focus{
   outline: none;
   background-color: var(--text-color);
 }
