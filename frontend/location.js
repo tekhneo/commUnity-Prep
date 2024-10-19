@@ -1,6 +1,6 @@
-// Import the functions you need from the SDKs you need
+/* Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-//import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAwAapZ_7K5D4B960hHiu868n6L5CUb0Bk",
@@ -13,7 +13,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-const database = firebase.database();
+const database = firebase.database();*/
 
 document.getElementById('get-location').addEventListener('click', () => {
     if (navigator.geolocation) {
