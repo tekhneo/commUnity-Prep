@@ -12,7 +12,7 @@ const firebaseConfig = {
   };
 
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
+//const app = firebase.initializeApp(firebaseConfig);
 //const database = firebase.database();
 
 document.getElementById('get-location').addEventListener('click', () => {
