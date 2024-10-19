@@ -11,8 +11,9 @@ const firebaseConfig = {
     appId: "1:184163988138:web:7773c99913d33b855156d3"
   };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
 
 document.getElementById('get-location').addEventListener('click', () => {
     if (navigator.geolocation) {
