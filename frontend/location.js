@@ -2,6 +2,18 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
 
+const firebaseConfig = {
+    apiKey: "AIzaSyAwAapZ_7K5D4B960hHiu868n6L5CUb0Bk",
+    authDomain: "community-prep-1024.firebaseapp.com",
+    projectId: "community-prep-1024",
+    storageBucket: "community-prep-1024.appspot.com",
+    messagingSenderId: "184163988138",
+    appId: "1:184163988138:web:7773c99913d33b855156d3"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+
 document.getElementById('get-location').addEventListener('click', () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
