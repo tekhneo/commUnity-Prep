@@ -10,6 +10,11 @@ document.getElementById('get-location').addEventListener('click', () => {
 
                 document.getElementById('location').innerHTML = 
                     `Latitude: ${latitude}, Longitude: ${longitude}`;
+
+                const dbRef = ref(database, 'community-prep-1024-default-rtdb/data/~2F');
+                const data = coordinates;
+                set(dbRef, data)
+                
             },
             (error) => {
                 switch (error.code) {
