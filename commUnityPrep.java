@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class commUnityPrep {
     // use method to build new table of user resources multiple times 
     // will be used to update database of resources
-    public void pullUserResources() {
+    public static void pullUserResources() {
         // initialize new Scanner
         Scanner input = new Scanner(System.in);
 
