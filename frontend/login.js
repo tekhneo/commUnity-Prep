@@ -6,12 +6,12 @@ import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.14.
 
   // Your web app's Firebase configuration
   const firebaseConfig = {
-    apiKey: "AIzaSyAwAapZ_7K5D4B960hHiu868n6L5CUb0Bk",
-    authDomain: "community-prep-1024.firebaseapp.com",
-    projectId: "community-prep-1024",
-    storageBucket: "community-prep-1024.appspot.com",
-    messagingSenderId: "184163988138",
-    appId: "1:184163988138:web:7773c99913d33b855156d3"
+    apiKey: "$YOUR_API_KEY",
+    authDomain: "$YOUR_DOMAIN",
+    projectId: "$YOUR_ID",
+    storageBucket: "$YOUR_BUCKET",
+    messagingSenderId: "$YOUR_SENDER_ID",
+    appId: "$YOUR_APP_ID"
   };
 
   // Initialize Firebase
